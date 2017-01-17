@@ -16,8 +16,6 @@ ENV JMETER_HOME=/opt/apache-jmeter-3.1/
 # Add Jmeter to the Path
 ENV PATH=$JMETER_HOME/bin:$PATH
 
-VOLUME /etc/jmeter ${WORK_HOME}/var
-
 EXPOSE 1099 5000 60000
 
 CMD /bin/bash -e docker-entrypoint.sh
