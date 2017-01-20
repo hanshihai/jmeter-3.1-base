@@ -13,6 +13,9 @@ RUN ${WORK_HOME}/docker-setup.sh
 # Set Jmeter Home
 ENV JMETER_HOME=/opt/apache-jmeter-3.1/
 
+# add scripts volume under jmeter_home so that the scripts can be attached here
+VOLUME $JMETER_HOME/scripts
+
 # Add Jmeter to the Path
 ENV PATH=$JMETER_HOME/bin:$PATH
 
