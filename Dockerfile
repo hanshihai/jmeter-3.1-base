@@ -19,6 +19,6 @@ VOLUME $JMETER_HOME/scripts
 # Add Jmeter to the Path
 ENV PATH=$JMETER_HOME/bin:$PATH
 
-EXPOSE 1099 5000 60000
+EXPOSE 60000
 
 CMD /bin/bash -e docker-entrypoint.sh
